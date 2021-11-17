@@ -16,3 +16,21 @@ new_list.append("g") # adds 'g' to end of new_list to give ['s', 'i', 'n', 'g']
 
 print(my_list) # prints ['i','n']
 print(new_list) #prints ['s','i','n','g']
+
+
+new_list.insert(1,"t")
+print(new_list) # prints ['s', 't', 'i', 'n', 'g']
+
+import random
+letter = random.choice(new_list)
+print(letter) # prints any random letter from the list
+
+print(new_list) # prints ['s', 't', 'i', 'n', 'g']
+
+final_list = []
+for i in new_list:
+  final_list.append(new_list.index(i))
+sum(final_list)
+len(final_list)
+
+print(final_list) # prints the indexes of the items in the list as a new list [0, 1, 2, 3, 4]
