@@ -8,13 +8,18 @@ while count < 10:
   
 tot = sum(num_list)
 length = len(num_list)
-
 average = tot/length
 
 print(tot)
 print(length)
 print(average)
 
-
+for i in num_list:
+    if i > average:
+        print(i, 'is greater than the average')
+    elif i < average:
+        print(i, 'is smaller than the average')
+    else: 
+        print(i, 'is equal to the average')
 
     
